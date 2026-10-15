@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>فون ماستر · Phone Master — نظام إدارة محل بيع وتصليح الهواتف</title>
+<meta name="description" content="فون ماستر — نظام سطح مكتب متكامل ويعمل أوفلاين لإدارة محل بيع وتصليح الهواتف: المخزون، نقطة البيع، التصليحات، التقسيط، الأرباح والتقارير. مبنٍ بـ Next.js و Electron و PostgreSQL." />
+<meta name="author" content="Zaki" />
+<meta name="keywords" content="فون ماستر, Phone Master, إدارة محل هواتف, تصليح هواتف, نقطة بيع, مخزون, أقساط, Electron, Next.js, PostgreSQL" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="فون ماستر · Phone Master" />
+<meta property="og:description" content="نظام سطح مكتب متكامل لإدارة محل بيع وتصليح الهواتف — يعمل بدون إنترنت." />
+<meta property="og:image" content="assets/logo.png" />
+
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="شعار فون ماستر" />
+      <span>فون ماستر<small>Phone Master</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">المميزات</a>
+      <a href="#modules">الوحدات</a>
+      <a href="#tech">التقنيات</a>
+      <a href="#security">الأمان</a>
+      <a class="nav-cta" href="https://github.com/zakidri27/phone-master/releases/latest/download/PhoneMaster-Setup-1.0.0.exe">⬇️ تحميل</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero container" id="top">
+  <div class="badge-pill"><span class="dot"></span> الإصدار 1.0.0 · مخصّص لويندوز · يعمل بدون إنترنت</div>
+  <img class="hero-logo" src="assets/logo.png" alt="Phone Master Logo" />
+  <h1>نظام <span class="grad">فون ماستر</span><br />لإدارة محل بيع وتصليح الهواتف</h1>
+  <p class="lead">
+    تطبيق سطح مكتب متكامل يدير محلك من الألف إلى الياء: المخزون، نقطة البيع، الفواتير،
+    الصيانة، التقسيط، المصروفات، الأرباح والتقارير — بواجهة عربية أنيقة، وقاعدة بيانات
+    PostgreSQL مدمجة تُجهَّز تلقائياً عند أول تشغيل.
+  </p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="https://github.com/zakidri27/phone-master/releases/latest/download/PhoneMaster-Setup-1.0.0.exe">⬇️ تحميل النسخة (Windows)</a>
+    <a class="btn btn-ghost" href="https://github.com/zakidri27/phone-master">📂 عرض الشيفرة على GitHub</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>12+</b><span>وحدة متكاملة</span></div>
+    <div class="stat"><b>20+</b><span>واجهة برمجية</span></div>
+    <div class="stat"><b>14</b><span>جدول قاعدة بيانات</span></div>
+    <div class="stat"><b>100%</b><span>يعمل أوفلاين</span></div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Features</div>
+      <h2>كل ما يحتاجه متجرك في تطبيق واحد</h2>
+      <p>من استقبال الجهاز للصيانة حتى بيع الهاتف بالتقسيط — كل شيء في نظام واحد منسّق.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="ico">📦</div><h3>إدارة المخزون</h3><p>هواتف وملحقات مع الماركة والطراز واللون والسعة والـ IMEI، مع تنبيهات الحد الأدنى للمخزون.</p></div>
+      <div class="card reveal"><div class="ico">🧾</div><h3>نقطة البيع (كاشير)</h3><p>فواتير سريعة، خصومات، طرق دفع متعددة، وطباعة إيصالات احترافية.</p></div>
+      <div class="card reveal"><div class="ico">🔧</div><h3>إدارة التصليحات</h3><p>تذاكر صيانة، تشخيص الأعطال، قطع الغيار، تعيين الفني وتتبّع حالة الجهاز.</p></div>
+      <div class="card reveal"><div class="ico">📅</div><h3>نظام التقسيط</h3><p>الدفعة الأولى، جدول الأقساط الشهرية، الأقساط المتبقية ومواعيد الاستحقاق.</p></div>
+      <div class="card reveal"><div class="ico">🛒</div><h3>المشتريات والموردون</h3><p>تسجيل فواتير الشراء وإعادة تعبئة المخزون بضغطة واحدة.</p></div>
+      <div class="card reveal"><div class="ico">💸</div><h3>المصروفات</h3><p>تصنيف مصروفات المحل ومتابعتها بدقة مع طرق الدفع.</p></div>
+      <div class="card reveal"><div class="ico">📈</div><h3>تحليل الأرباح</h3><p>حساب الربح من التكلفة مقابل سعر البيع وتقارير ربحية واضحة.</p></div>
+      <div class="card reveal"><div class="ico">📊</div><h3>تقارير وتصدير Excel</h3><p>تقارير تفصيلية قابلة للتصدير إلى ملفات Excel بضغطة زر.</p></div>
+      <div class="card reveal"><div class="ico">👷</div><h3>العاملون والصلاحيات</h3><p>أدوار، رواتب، ودخول محمي بـ PIN مع صلاحيات لكل صفحة.</p></div>
+      <div class="card reveal"><div class="ico">⚙️</div><h3>إعدادات المحل</h3><p>الاسم، الشعار، العملة، الضريبة، وتذييل الإيصال — كل شيء قابل للتخصيص.</p></div>
+      <div class="card reveal"><div class="ico">🛡️</div><h3>النسخ الاحتياطي</h3><p>نسخ واسترجاع آمن لقاعدة البيانات لحماية بياناتك.</p></div>
+      <div class="card reveal"><div class="ico">🌙</div><h3>وضع ليلي + ثنائي اللغة</h3><p>واجهة عربية/إنجليزية كاملة مع دعم RTL ووضع ليلي مريح للعين.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Modules</div>
+      <h2>الوحدات والصفحات</h2>
+      <p>تنظّم واضح بين العمليات اليومية للكاشير والإدارة والتقارير.</p>
+    </div>
+    <div class="arch reveal">
+      <pre>تسجيل الدخول  ──►  الرئيسية  ──┬──► الكاشير        ──► إصدار فاتورة
+                              ├──► المخزون         ──► الهواتف والملحقات
+                              ├──► المبيعات        ──► الفواتير والعملاء
+                              ├──► المشتريات       ──► الموردون
+                              ├──► التصليحات       ──► تذاكر الصيانة
+                              ├──► التقسيط         ──► الأقساط والدفعات
+                              ├──► المصروفات       ──► التكاليف
+                              ├──► الأرباح         ──► تحليل الربحية
+                              ├──► التقارير        ──► تصدير Excel
+                              ├──► العاملون        ──► الصلاحيات والرواتب
+                              └──► الإعدادات       ──► النسخ الاحتياطي</pre>
+    </div>
+  </div>
+</section>
+
+<section id="tech">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Tech Stack</div>
+      <h2>مبني بأحدث التقنيات</h2>
+      <p>معمارية حديثة تجمع سرعة الويب مع قوة تطبيقات سطح المكتب.</p>
+    </div>
+    <div class="tech-wrap reveal">
+      <span class="chip">⚛️ Next.js 16</span>
+      <span class="chip">⚛️ React 19</span>
+      <span class="chip">🖥️ Electron</span>
+      <span class="chip">🐘 PostgreSQL (مدمجة)</span>
+      <span class="chip">🧬 Drizzle ORM</span>
+      <span class="chip">🎨 Tailwind CSS</span>
+      <span class="chip">📊 ExcelJS</span>
+      <span class="chip">🅰️ TypeScript</span>
+      <span class="chip">🔡 دعم RTL كامل</span>
+    </div>
+  </div>
+</section>
+
+<section id="security">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Security &amp; Architecture</div>
+      <h2>آمن، محلي، ويعمل بدون إنترنت</h2>
+      <p>بياناتك تبقى على جهازك — لا يخرج أي طلب للشبكة الخارجية.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="ico">🔒</div><h3>عزل الواجهة</h3><p>contextIsolation و sandbox مفعّلان مع تعطيل nodeIntegration.</p></div>
+      <div class="card reveal"><div class="ico">🚫</div><h3>حجب الشبكة الخارجية</h3><p>كل الطلبات محصورة على 127.0.0.1 — لا اتصالات للخارج.</p></div>
+      <div class="card reveal"><div class="ico">🗄️</div><h3>قاعدة بيانات محمولة</h3><p>PostgreSQL مدمجة تُجهَّز تلقائياً وتعمل مستقلة تماماً.</p></div>
+    </div>
+    <div class="arch reveal" style="margin-top:18px">
+      <pre>┌────────────────────────────  Electron  ────────────────────────────┐
+│                                                                    │
+│   1) ensureDatabase()  ──►  تجهيز PostgreSQL (نظام أو مدمج)        │
+│                                                                    │
+│   2) startNextServer() ──►  خادم Next.js محلي @ 127.0.0.1:3179     │
+│                                                                    │
+│   3) createWindow()    ──►  نافذة آمنة ومحصورة محلياً              │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘</pre>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="container">
+    <div class="download-card reveal">
+      <h2>جرّب فون ماستر الآن</h2>
+      <p>حمّل المثبّت، ثبّته، وابدأ بإدارة متجرك خلال دقائق — دون أي إعداد لقاعدة البيانات.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/zakidri27/phone-master/releases/latest/download/PhoneMaster-Setup-1.0.0.exe">⬇️ تحميل PhoneMaster-Setup-1.0.0.exe</a>
+        <a class="btn btn-ghost" href="https://github.com/zakidri27/phone-master">توثيق المشروع الكامل</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="socials">
+      <a href="https://github.com/zakidri27/phone-master">GitHub</a>
+      <a href="https://github.com/zakidri27/phone-master/releases">Releases</a>
+      <a href="https://github.com/zakidri27/phone-master/issues">Issues</a>
+    </div>
+    <p>صُنع بـ ❤️ بواسطة <strong>Zaki</strong> · © 2026 — فون ماستر (Phone Master)</p>
+    <p class="en">Phone Master — Offline-first desktop system for mobile phone sales &amp; repair shops.</p>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+</script>
+</body>
+</html>

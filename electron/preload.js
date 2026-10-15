@@ -1,0 +1,1 @@
+// preload — لا يُكشف أي API للواجهة؛ contextIsolation مفعّل.

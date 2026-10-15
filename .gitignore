@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Electron packaged output & installers (distributed via GitHub Releases)
+release/
+*.exe
+*.exe.blockmap
+*.dmg
+*.AppImage
+*.deb
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local PostgreSQL data (bundled runtime)
+pgdata/
+*.pid

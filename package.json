@@ -1,0 +1,45 @@
+{
+  "name": "phone-master",
+  "version": "1.0.0",
+  "description": "Phone Master — an offline-first desktop system for managing a mobile phone sales & repair shop (inventory, POS, repairs, installments, expenses, profits and reports).",
+  "author": "Zaki <zdri57556@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "electron",
+    "nextjs",
+    "react",
+    "postgresql",
+    "point-of-sale",
+    "inventory",
+    "repair-management",
+    "mobile-shop",
+    "offline-first",
+    "arabic"
+  ],
+  "main": "electron/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zakidri27/phone-master.git"
+  },
+  "homepage": "https://zakidri27.github.io/phone-master/",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "electron:dev": "cross-env NODE_ENV=development electron .",
+    "electron:build": "next build && electron-builder"
+  },
+  "dependencies": {
+    "date-fns": "^4.4.0",
+    "dotenv": "17.3.1",
+    "drizzle-orm": "0.45.2",
+    "exceljs": "^4.4.0",
+    "lucide-react": "^1.31.0",
+    "next": "16.2.6",
+    "pg": "8.20.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  }
+}
