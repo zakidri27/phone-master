@@ -19,7 +19,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: "Tajawal", "Segoe UI", Tahoma, system-ui, sans-serif;
+  font-family: "Inter", "Segoe UI", Tahoma, system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;

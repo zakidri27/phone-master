@@ -2,148 +2,146 @@
 
 <img src="docs/assets/logo.png" alt="Phone Master" width="120" />
 
-# Phone Master · فون ماستر
+# Phone Master
 
-**نظام سطح مكتب متكامل لإدارة محل بيع وتصليح الهواتف**
-*An offline-first desktop system for managing a mobile phone sales & repair shop*
+**An offline-first desktop system for managing a mobile phone sales & repair shop**
 
 [![Release](https://img.shields.io/github/v/release/zakidri27/phone-master?style=for-the-badge&color=6366f1)](https://github.com/zakidri27/phone-master/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Windows-0ea5e9?style=for-the-badge)](#-التثبيت--installation)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0ea5e9?style=for-the-badge)](#-installation)
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=000)](https://react.dev)
 [![Electron](https://img.shields.io/badge/Electron-Desktop-47848f?style=for-the-badge&logo=electron)](https://www.electronjs.org)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Embedded-4169e1?style=for-the-badge&logo=postgresql&logoColor=fff)](https://www.postgresql.org)
 
-[🔗 موقع المشروع](https://zakidri27.github.io/phone-master/) · [⬇️ تحميل النسخة](https://github.com/zakidri27/phone-master/releases/latest) · [🐞 الإبلاغ عن مشكلة](https://github.com/zakidri27/phone-master/issues)
+[Product page](https://zakidri27.github.io/phone-master/) · [Download](https://github.com/zakidri27/phone-master/releases/latest) · [Report an issue](https://github.com/zakidri27/phone-master/issues)
 
 </div>
 
 ---
 
-## 🌐 نظرة عامة · Overview
+## Overview
 
-**فون ماستر** تطبيق سطح مكتب (Desktop) احترافي مصمّم لإدارة محل بيع وتصليح الهواتف المحمولة
-من الألف إلى الياء: المخزون، نقطة البيع، الفواتير، الصيانة، التقسيط، المصروفات، الأرباح والتقارير.
+**Phone Master** is a professional **Electron desktop application** for running a phone
+sales & repair shop end-to-end: inventory, point of sale, invoicing, repairs, installments,
+expenses, profits and reporting.
 
-يعمل التطبيق **بالكامل بدون إنترنت (Offline-first)** — حيث يُشغّل خادم Next.js محلياً داخل
-تطبيق Electron، ويقوم تلقائياً بتهيئة **قاعدة بيانات PostgreSQL مدمجة** عند أول تشغيل، دون أي
-إعداد يدوي من المستخدم.
-
-> **Phone Master** is a professional **Electron desktop application** for running a phone
-> sales & repair shop end-to-end. It is **offline-first**: a local Next.js server runs inside
-> Electron and an **embedded PostgreSQL** database is provisioned automatically on first launch —
-> zero manual configuration.
+The application is **fully offline-first**: a local Next.js server runs inside Electron and an
+**embedded PostgreSQL** database is provisioned automatically on first launch — with **zero
+manual configuration** for the end user.
 
 ---
 
-## ✨ المميزات الرئيسية · Key Features
+## Key Features
 
-| # | الوحدة | الوصف |
-|---|--------|-------|
-| 📦 | **المخزون** | إدارة الهواتف والملحقات: الماركة، الطراز، اللون، السعة، الرAM، الـ IMEI، التكلفة وسعر البيع، تنبيهات الحد الأدنى للمخزون. |
-| 🧾 | **نقطة البيع (الكاشير)** | إنشاء فواتير سريعة، خصومات، طرق دفع متعددة، وطباعة الإيصالات. |
-| 💰 | **المبيعات** | الفواتير، ربط العملاء، متابعة المبيعات اليومية والإجمالية. |
-| 🛒 | **المشتريات** | فواتير الموردين وإعادة تعبئة المخزون. |
-| 🔧 | **التصليحات** | تذاكر صيانة، تشخيص الأعطال، قطع الغيار، تعيين الفني، تتبّع الحالة (مستلم → قيد الإصلاح → مكتمل)، الدفعة المقدمة. |
-| 📅 | **التقسيط** | الدفعة الأولى، جدول الأقساط الشهرية، الأقساط المتبقية، مواعيد الاستحقاق وسجل الدفعات. |
-| 💸 | **المصروفات** | تصنيف المصروفات وطرق الدفع ومتابعتها. |
-| 📈 | **الأرباح** | تحليل الأرباح (التكلفة مقابل سعر البيع) وتقارير الربحية. |
-| 📊 | **التقارير** | تقارير تفصيلية مع **تصدير إلى Excel**. |
-| 👷 | **العاملون** | الأدوار، الرواتب، صلاحيات الوصول لكل صفحة عبر **PIN**. |
-| ⚙️ | **الإعدادات** | اسم المحل، الشعار، العملة، نسبة الضريبة، تذييل الإيصال، رمز المدير. |
-| 🛡️ | **النسخ الاحتياطي** | نسخ واسترجاع قاعدة البيانات. |
+| Module | Description |
+|--------|-------------|
+| 📦 **Inventory** | Manage phones and accessories with brand, model, color, storage, RAM, IMEI, cost/sell price, categories and low-stock alerts. |
+| 🧾 **Point of Sale (Cashier)** | Fast invoicing, discounts, multiple payment methods and receipt printing. |
+| 💰 **Sales** | Orders, customer linkage and daily/total sales tracking. |
+| 🛒 **Purchases** | Supplier invoices and stock restocking. |
+| 🔧 **Repairs** | Repair tickets, fault diagnosis, spare parts, technician assignment, status tracking (received → repairing → completed) and advance payments. |
+| 📅 **Installments** | Down payment, monthly installment schedule, remaining balance, due dates and payment history. |
+| 💸 **Expenses** | Categorized store expenses with payment methods. |
+| 📈 **Profits** | Profit analysis (cost vs. sell price) and clear profitability reporting. |
+| 📊 **Reports** | Detailed reports with **Excel export**. |
+| 👷 **Workers** | Roles, salaries and per-page access control via **PIN**. |
+| ⚙️ **Settings** | Store name, logo, currency, tax rate, receipt footer and manager PIN. |
+| 🛡️ **Backup** | Database backup and restore. |
 
-### 🌍 مزايا عامة · General
-- 🌐 **ثنائي اللغة (عربي / إنجليزي)** مع دعم كامل لتنسيق **RTL**.
-- 🌙 **الوضع الليلي / النهاري**.
-- 📴 **يعمل دون إنترنت** — بياناتك تبقى على جهازك.
-- 🖥️ **تطبيق سطح مكتب أصلي** بواجهة سريعة وغنية.
+### General
+
+- 🌐 **Bilingual (Arabic / English)** with full **RTL** support.
+- 🌙 **Dark / light theme**.
+- 📴 **Works offline** — your data stays on your machine.
+- 🖥️ **Native desktop app** with a fast, rich interface.
 
 ---
 
-## 🧩 الوحدات والصفحات · Modules & Pages
+## Modules & Pages
 
 ```text
-تسجيل الدخول  →  الرئيسية  →  { الكاشير · المخزون · المبيعات · المشتريات ·
-                                 التصليحات · التقسيط · المصروفات · الأرباح ·
-                                 التقارير · العاملون · الإعدادات · النسخ الاحتياطي }
+Login  →  Dashboard  →  { Cashier · Inventory · Sales · Purchases ·
+                          Repairs · Installments · Expenses · Profits ·
+                          Reports · Workers · Settings · Backup }
 ```
 
-**واجهات برمجية (API Routes):** `auth` · `products` · `customers` · `sales` · `purchases` ·
-`repairs` · `installments` · `expenses` · `profits` · `reports` · `dashboard` · `settings` ·
-`store` · `workers` · `upload` · `backup` · `export-excel` · `reset` · `seed` · `health`
+**API Routes:** `auth` · `products` · `customers` · `sales` · `purchases` · `repairs` ·
+`installments` · `expenses` · `profits` · `reports` · `dashboard` · `settings` · `store` ·
+`workers` · `upload` · `backup` · `export-excel` · `reset` · `seed` · `health`
 
 ---
 
-## 🛠️ التقنيات المستخدمة · Tech Stack
+## Tech Stack
 
-| الطبقة | التقنية |
-|--------|---------|
-| **واجهة المستخدم** | Next.js 16 · React 19 · Tailwind CSS · Lucide React |
-| **سطح المكتب** | Electron (single-instance، splash screen، تعزيز أمني) |
-| **قاعدة البيانات** | PostgreSQL (مدمجة) · Drizzle ORM · driver `pg` |
-| **أدوات** | ExcelJS (تصدير Excel) · date-fns · dotenv · electron-builder |
+| Layer | Technology |
+|-------|------------|
+| **UI** | Next.js 16 · React 19 · Tailwind CSS · Lucide React |
+| **Desktop** | Electron (single-instance, splash screen, security hardening) |
+| **Database** | PostgreSQL (embedded) · Drizzle ORM · `pg` driver |
+| **Tooling** | ExcelJS (Excel export) · date-fns · dotenv · electron-builder |
 
 ---
 
-## 🏗️ البنية المعمارية · Architecture
+## Architecture
 
 ```text
-┌────────────────────────────  Electron ────────────────────────────┐
-│                                                                   │
-│   1) ensureDatabase()  ──►  يفحص DATABASE_URL ثم PostgreSQL       │
-│                              النظام، وإلا يشغّل PostgreSQL مدمج    │
-│                              على منفذ محلي حر (5432–5452)          │
-│                                                                   │
-│   2) startNextServer() ──►  يشغّل خادم Next.js داخلياً            │
-│                              على http://127.0.0.1:3179            │
-│                                                                   │
-│   3) createWindow()    ──►  نافذة آمنة (contextIsolation +         │
-│                              sandbox + حجب الشبكة الخارجية)        │
-│                                                                   │
-└───────────────────────────────────────────────────────────────────┘
+┌────────────────────────────  Electron  ────────────────────────────┐
+│                                                                    │
+│   1) ensureDatabase()  ──►  checks DATABASE_URL, then the system   │
+│                              PostgreSQL; otherwise starts an       │
+│                              embedded PostgreSQL on a free local   │
+│                              port (5432–5452)                       │
+│                                                                    │
+│   2) startNextServer() ──►  runs the Next.js server in-process     │
+│                              on http://127.0.0.1:3179               │
+│                                                                    │
+│   3) createWindow()    ──►  secure window (contextIsolation +      │
+│                              sandbox + external network blocking)  │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
 ```
 
-- **تشغيل أوفلاين بالكامل**: لا يخرج التطبيق أي طلب للشبكة؛ كل الاتصالات محصورة على
-  `127.0.0.1`.
-- **قاعدة بيانات محمولة**: إن وُجد PostgreSQL على المنفذ 5432 يُستخدم، وإلا يُشغَّل نسخة مدمجة
-  مستقلة تماماً داخل مجلد المستخدم.
+- **Fully offline**: the app touches no external network; all traffic is bound to `127.0.0.1`.
+- **Portable database**: if PostgreSQL is available on port 5432 it is reused; otherwise a fully
+  self-contained embedded instance runs inside the user's data directory.
 
-### الأمان · Security
-- `contextIsolation: true` و `nodeIntegration: false` و `sandbox: true`.
-- **حجب جميع الطلبات الشبكية الخارجية** عبر `webRequest.onBeforeRequest`.
-- تعطيل أدوات المطوّر ومفاتيح الوظائف (`F12`, `Ctrl+Shift+I`, `Ctrl+U` …).
-- قفل النسخة الواحدة (Single-instance lock) لمنع تشغيل نسختين.
+### Security
+
+- `contextIsolation: true`, `nodeIntegration: false` and `sandbox: true`.
+- **Blocks all external network requests** via `webRequest.onBeforeRequest`.
+- Disables DevTools and function keys (`F12`, `Ctrl+Shift+I`, `Ctrl+U`, …).
+- Single-instance lock to prevent running two copies at once.
 
 ---
 
-## ⬇️ التثبيت · Installation
+## Installation
 
-### للمستخدم النهائي (Windows)
-1. حمّل المثبّت من صفحة [Releases](https://github.com/zakidri27/phone-master/releases/latest).
-2. شغّل `PhoneMaster-Setup-1.0.0.exe` واتبع خطوات التثبيت.
-3. افتح **فون ماستر** — سيتم تجهيز قاعدة البيانات تلقائياً عند أول تشغيل.
+### End users (Windows)
 
-> **Windows only** — Download the installer from the Releases page and run it. The database is set up automatically on first launch.
+1. Download the installer from the [Releases](https://github.com/zakidri27/phone-master/releases/latest) page.
+2. Run `PhoneMaster-Setup-1.0.0.exe` and follow the setup steps.
+3. Launch **Phone Master** — the database is provisioned automatically on first run.
 
-### للمطوّرين · For Developers
+> The app is not code-signed, so Windows SmartScreen may warn you. Click **More info → Run anyway**.
+
+### For developers
 
 ```bash
-# 1) تثبيت الحزم
+# 1) Install dependencies
 npm install
 
-# 2) تشغيل واجهة Next.js في وضع التطوير
+# 2) Run the Next.js UI in development mode
 npm run dev
 
-# 3) تشغيل تطبيق Electron
+# 3) Launch the Electron app
 npm run electron:dev
 
-# 4) بناء نسخة الإنتاج ومثبّت Electron
+# 4) Build the production app and the Electron installer
 npm run electron:build
 ```
 
-**(اختياري)** لاستخدام قاعدة بيانات خارجية، أنشئ ملف `.env` بجانب التطبيق:
+**(Optional)** To use an external database, create a `.env` file next to the app:
 
 ```env
 DATABASE_URL=postgresql://postgres:password@127.0.0.1:5432/app_db
@@ -151,33 +149,40 @@ DATABASE_URL=postgresql://postgres:password@127.0.0.1:5432/app_db
 
 ---
 
-## 📸 لقطات الشاشة · Screenshots
+## Project Structure
 
-> تُضاف اللقطات في مجلد [`docs/`](docs). يمكنك تجربة واجهة المشروع مباشرة من
-> [صفحة العرض](https://zakidri27.github.io/phone-master/).
+```text
+phone-master/
+├── electron/
+│   ├── main.js          # Electron main process (window, security, server boot)
+│   ├── preload.js       # Preload script (isolated context)
+│   ├── db-setup.cjs     # PostgreSQL provisioning + schema (DDL)
+│   └── bundled-pg.cjs   # Embedded PostgreSQL launcher
+├── docs/                # GitHub Pages product page
+│   ├── index.html
+│   ├── style.css
+│   └── assets/logo.png
+├── package.json
+├── next.config.ts
+└── README.md
+```
 
 ---
 
-## 🗺️ خارطة الطريق · Roadmap
-- [ ] دعم الطباعة الحرارية للإيصالات.
-- [ ] تطبيق جوال مرافق (React Native).
-- [ ] مزامنة سحابية اختيارية.
-- [ ] لوحة تحكم تحليلية متقدمة.
+## Contributing
 
----
+Contributions are welcome. Open an *Issue* to discuss a change, or submit a *Pull Request*.
 
-## 🤝 المساهمة · Contributing
-المساهمات مرحّب بها. افتح *Issue* لمناقشة التغيير، أو أرسل *Pull Request*.
+## License
 
-## 📄 الرخصة · License
-هذا المشروع مرخّص تحت **رخصة MIT** — انظر ملف [LICENSE](LICENSE) للتفاصيل.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-صُنع بـ ❤️ — **Zaki** · © 2026
+Made with ❤️ by **Zaki** · © 2026
 
-⭐ إذا أعجبك المشروع، لا تنسَ تركه بنجمة!
+⭐ If you like the project, please leave a star!
 
 </div>
